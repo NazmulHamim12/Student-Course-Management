@@ -1,0 +1,21 @@
+Student_ID,Student_Name,Scholarship_ID,Semester,CGPA,Total_Registered_Credits
+101001,Abrar Hasan,SCH101,1st,0.00,0
+101002,Nusrat Jahan,NONE,1st,0.00,0
+101003,Fahim Rahman,SCH102,1st,0.00,0
+101004,Sadia Islam,NONE,1st,0.00,0
+101005,Tanvir Ahmed,SCH101,1st,0.00,0
+201001,Mehedi Hasan,SCH101,2nd,3.72,13
+201002,Sumaiya Akter,NONE,2nd,3.25,10
+201003,Rakib Hossain,SCH102,2nd,3.85,13
+201004,Jannatul Ferdous,NONE,2nd,3.40,12
+201005,Shakil Ahmed,SCH101,2nd,3.60,13
+301001,Arif Hossain,SCH102,3rd,3.78,15
+301002,Mim Akter,NONE,3rd,3.15,14
+301003,Saif Rahman,SCH101,3rd,3.91,15
+301004,Tanjim Islam,NONE,3rd,3.50,13
+301005,Rafiul Karim,SCH102,3rd,3.68,15
+401001,Nabila Sultana,SCH101,4th,3.82,12
+401002,Mahin Chowdhury,NONE,4th,3.30,15
+401003,Tasnim Rahman,SCH102,4th,3.95,14
+401004,Samin Hossain,NONE,4th,3.45,15
+401005,Priya Das,SCH101,4th,3.75,13

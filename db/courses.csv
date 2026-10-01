@@ -1,0 +1,34 @@
+Course_ID,Course_Title,Credit,Fee_per_Credit,Available_Seats,Semester,Status
+SWE101,Structured Programming,3,4500,32,1st,Open
+SWE102,Object Oriented Programming,3,5000,28,2nd,Open
+SWE103,Data Structures,3,5000,25,2nd,Open
+SWE201,Database Management System,3,5500,30,3rd,Open
+SWE202,Software Engineering,3,5000,35,3rd,Open
+SWE203,Computer Networks,3,5000,22,4th,Open
+SWE204,Operating Systems,3,5500,27,4th,Open
+SWE301,Web Programming,3,5500,24,5th,Open
+SWE302,Artificial Intelligence,3,6000,20,6th,Open
+SWE303,Machine Learning,3,6000,18,7th,Open
+SWE401,Software Testing,3,5000,29,7th,Open
+SWE402,Mobile Application Development,3,5500,34,8th,Open
+SWE403,Cyber Security,3,6000,23,8th,Open
+EEE101,Electrical Circuit,3,4500,30,1st,Open
+EEE102,Electronic Devices,3,5000,26,2nd,Open
+EEE201,Digital Electronics,3,5000,24,3rd,Open
+EEE202,Microprocessor and Microcontroller,3,5500,21,4th,Open
+EEE301,Power System,3,5500,28,5th,Open
+EEE302,Communication Engineering,3,6000,20,6th,Open
+MAT101,Mathematics-I,3,4500,40,1st,Open
+MAT102,Mathematics-II,3,4500,33,2nd,Open
+MAT201,Mathematics-III,3,5000,30,3rd,Open
+PHY101,Physics,3,4500,26,1st,Open
+ENG101,English,3,4000,45,1st,Open
+ENG102,Technical English,3,4000,38,2nd,Open
+GED101,Bangladesh Studies,2,3500,50,1st,Open
+GED102,History of Bangladesh,2,3500,42,2nd,Open
+GED103,Introduction to Sociology,2,3500,36,3rd,Open
+GED104,Environmental Studies,2,3500,40,4th,Open
+GED105,Economics,3,4000,32,5th,Open
+GED106,Psychology,3,4000,35,6th,Open
+GED107,Ethics and Moral Studies,2,3500,44,7th,Open
+GED108,Entrepreneurship,3,4500,30,8th,Open
