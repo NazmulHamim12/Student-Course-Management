@@ -282,12 +282,85 @@ void searchcourse(Student loggedInStudent)
 {
     string courseID;
 
-    cout<<"---------- SEARCH COURSE ----------\n\n";
+    cout<<"\n\n\n---------- SEARCH COURSE ----------\n\n";
 
     cout<<"Enter your course ID: ";
     cin.ignore(10000, '\n');
 
     getline(cin, courseID);
+
+    ifstream file("Courses.csv");
+
+    if(!file)
+    {
+        cout<< "Course file not found!\n";
+        pausescreen();
+        return;
+    }
+
+    string line;
+    getline(file,line);
+
+    bool coursefound = false;
+
+
+    while(getline(file, line))
+    {
+        stringstream ss(line);
+        
+        Course course;
+        
+        string credit, feepercredit, availableseats;
+
+
+        getline(ss, course.courseID, ',');
+        getline(ss, course.courseTitle, ',');
+        getline(ss, credit, ',');
+        getline(ss, feepercredit, ',');
+        getline(ss, availableseats, ',');
+        getline(ss, course.semester, ',');
+        getline(ss, course.status, ',');
+
+        course.credit = stoi(credit);
+        course.feePerCredit = stod(feepercredit);
+        course.availableSeats = stoi(availableseats);
+
+
+
+        if(course.semester != loggedInStudent.semester)
+        {
+            continue;
+        }
+
+        if(course.courseID == courseID)
+        {
+            coursefound = true;
+
+            cout<<"Course Found...\n\n\n";
+            cout<<"---------- COURSE DETAILS ----------\n\n";
+            cout<<"Course ID       :  "<<course.courseID<<endl;
+            cout<<"Course Title    :  "<<course.courseTitle<<endl;
+            cout<<"Course Credit   :  "<<course.credit<<endl;
+            cout<<"Fee Per Credit  :  "<<course.feePerCredit<<endl;
+            cout<<"Available Seats :  "<<course.availableSeats<<endl;
+            cout<<"Semester        :  "<<course.semester<<endl;
+            cout<<"Status          :  "<<course.status<<endl;
+
+            cout<<"\n\nPress Enter to return to the Dashboard...";
+
+            clearinputbuffer();
+            //pausescreen();
+            
+        }
+    }
+
+    file.close();
+
+    if(!coursefound)
+    {
+        cout<<"Course not found! Please check the course ID\n";
+        pausescreen();
+    }
 
 
 
@@ -311,7 +384,8 @@ bool studentDashboard(Student loggedInStudent)
         cout << "-------------------------------------------------------------------\n";
 
         cout << "1. View Courses\n";
-        cout << "2. Logout\n";
+        cout << "2. Search Course\n";
+        cout << "3. Logout\n";
 
         cout << "-------------------------------------------------------------------\n";
 
@@ -336,7 +410,13 @@ bool studentDashboard(Student loggedInStudent)
               
                 break;
 
-            case 2:
+                case 2:
+                searchcourse(loggedInStudent);
+
+              
+                break;
+
+            case 3:
                 cout << "\nLoged out!\n";
               
                 return false;
